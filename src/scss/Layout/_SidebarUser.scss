@@ -1,0 +1,52 @@
+
+.sidebar__wrapper{
+    font-size: 40px;
+    height: 100%;
+
+    border: solid 1px rgba(0, 0, 0, 0.575);
+  
+  
+    width: 9.5rem;
+   // background: linear-gradient(90deg, rgba(150,92,242,1) 0%, rgba(255,138,220,1) 100%);
+    background: linear-gradient(to bottom,
+        rgba(150, 92, 242, 1) 95%,
+        rgba(255, 138, 220, 1) 100%
+    );
+
+    
+    .sidebar__nav{
+
+        .profile__icon{
+            
+            padding-top: 468px;
+        }
+        padding-right: 10px;
+        
+        // display: flex;
+        cursor: pointer;
+        a{
+            text-decoration: none;
+            margin: 0 auto;
+            display: block;
+            padding: 40px 0;
+            list-style: none;
+            // color:#007bff;
+            color: white;
+            font-weight: 500;
+            // font-size: 1    rem;
+            i{
+                color:white;
+                font-size: .9em;
+            }
+        }
+    }
+}
+.web__name{
+    // background-color: #272b30;
+    color: white;
+    font-weight: 700;
+    font-style: italic;
+    font-size: .9em;
+    padding: 10px 20px;
+    // text-align: center;gi
+}
