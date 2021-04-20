@@ -8,7 +8,9 @@ function SidebarUser() {
             </div>
             <ul className="sidebar__nav">
                 <ul>
-                    
+                    <Link>
+                        
+                    </Link>
                 </ul>                
 
                 <div className="profile__icon">

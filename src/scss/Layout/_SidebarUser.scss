@@ -1,12 +1,12 @@
 
 .sidebar__wrapper{
     font-size: 40px;
-    height: 100%;
+    // height: 100vh;
 
     border: solid 1px rgba(0, 0, 0, 0.575);
+    border-radius: 2px;
   
-  
-    width: 9.5rem;
+    width: 10rem;
    // background: linear-gradient(90deg, rgba(150,92,242,1) 0%, rgba(255,138,220,1) 100%);
     background: linear-gradient(to bottom,
         rgba(150, 92, 242, 1) 95%,
@@ -18,11 +18,11 @@
 
         .profile__icon{
             
-            padding-top: 468px;
+            padding-top: 390px;
         }
         padding-right: 10px;
-        
-        // display: flex;
+        // height: 100vh;
+    
         cursor: pointer;
         a{
             text-decoration: none;
