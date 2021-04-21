@@ -4,6 +4,7 @@ import ContactDetail from "../Container/PageMain/ContactDetail";
 import LoginPage from "../Container/HomeTemplate/LoginPage/LoginPage";
 import RegisterPage from "../Container/HomeTemplate/RegisterPage/RegisterPage";
 import  UserPageRemake  from "../Container/UserTemplate/UserPageRemake";
+import HomePageUser from "../Container/UserTemplate/HomePageUser";
 const routesHome = [
   {
     exact: true,
@@ -35,6 +36,11 @@ const routesUser=[
         exact:false,
         path:"/user/profile",
         Component:UserPageRemake,
+    },
+    {
+        exact:false,
+        path:"/user/homepage",
+        Component:HomePageUser,
     }
 ]
 
