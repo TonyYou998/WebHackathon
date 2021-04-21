@@ -1,6 +1,6 @@
 import React from 'react'
 
-export function UserPageRemake(props) {
+export default function UserPageRemake(props) {
     
 
     return (
@@ -23,7 +23,7 @@ export function UserPageRemake(props) {
                     </nav>
                     <div className="profile__info ">
                         <div className="profile__avatar">
-                            <img className=" " src="./img/162082031_2880103468926566_4374364692726017034_n.jpg" alt />    
+                            <img className=" " src="./img/avater.jpg" alt />    
                         </div>      
                         <div className="text-white pl-3">
                             <h5>Tan Vuu</h5>
