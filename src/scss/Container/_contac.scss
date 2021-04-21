@@ -1,0 +1,111 @@
+.contact {
+    width: 100%;
+    // height: 400px;
+    .contact-item {
+        position: relative;
+        .item-content {
+            background-color: rgba(255, 0, 179, 0.863);
+        }
+        transition: all 0.5s;
+        .overGradiant {
+            display: none;
+            transition: all 0.5s;
+            p {
+                margin-top: 55%;
+            }
+        }
+        &:hover {
+            .overGradiant {
+                display: block;
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.7);
+                width: 100%;
+                height: 100%;
+                bottom: 0;
+                animation-name: runyourLife;
+                animation-duration: 1s;
+
+                @keyframes runyourLife {
+                    0% {
+                        opacity: 0;
+                        transform: translate(-50px, 0px);
+                    }
+
+                    100% {
+                        opacity: 1;
+                        transform: translate(0px, 0px);
+                    }
+                }
+            }
+        }
+    }
+
+    .header-blog,
+    .call-to-action {
+        background-image: url("https://3.bp.blogspot.com/-04vqcpHNiuo/W0x2THLFZXI/AAAAAAAAOl8/DUvOAykZU9Q0rVaRw4nFTWQM-d8__k-agCLcBGAs/s1600/dresscounter.jpg");
+    }
+
+    .header-blog {
+        // height: 60vh;
+        // padding-top: 100px;
+        // margin-top: 70px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-box-shadow: 0 15px 30px 0 rgba(5, 16, 44, 0.15);
+        box-shadow: 0 15px 30px 0 rgba(5, 16, 44, 0.15);
+    }
+
+    .bg-animation {
+        -webkit-animation: bg-animation 25s ease-in-out infinite;
+        animation: bg-animation 25s ease-in-out infinite;
+    }
+
+    .header-blog .container {
+        height: 100%;
+    }
+
+    .header-row {
+        height: 100%;
+    }
+
+    @keyframes type {
+        0% {
+            width: 0%;
+        }
+
+        50% {
+            width: 100%;
+        }
+
+        100% {
+            width: 0%;
+        }
+    }
+    /*****animated text End*****/
+
+    @-webkit-keyframes bg-animation {
+        0% {
+            background-position: top;
+        }
+
+        50% {
+            background-position: bottom;
+        }
+        100% {
+            background-position: top;
+        }
+    }
+
+    @keyframes bg-animation {
+        0% {
+            background-position: top;
+        }
+
+        50% {
+            background-position: bottom;
+        }
+        100% {
+            background-position: top;
+        }
+    }
+}
