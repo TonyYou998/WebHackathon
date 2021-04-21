@@ -8,9 +8,7 @@ export default function UserPageRemake(props) {
                 <div className="profile__header " style={{backgroundImage:"url(https://images.unsplash.com/photo-1508247967583-7d982ea01526?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80)"}}>
                      <nav className=" profile__navbar navbar navbar-expand-lg navbar-dark">
                       
-                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon" />
-                        </button>
+                       
                         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div className="navbar-nav">
                             <a className="hover nav-item nav-link active" href="#">About <span className="sr-only">(current)</span></a>
@@ -23,10 +21,12 @@ export default function UserPageRemake(props) {
                     </nav>
                     <div className="profile__info ">
                         <div className="profile__avatar">
-                            <img className=" " src="./img/avater.jpg" alt />    
+                           <img src="https://scontent-xsp1-3.xx.fbcdn.net/v/t1.6435-9/162082031_2880103468926566_4374364692726017034_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=C6DsZdLD-y0AX9PTFVs&_nc_ht=scontent-xsp1-3.xx&oh=8a7ed8065d23124cc035191a4f6118cd&oe=60A57B6C" alt=""></img>  
                         </div>      
                         <div className="text-white pl-3">
                             <h5>Tan Vuu</h5>
+                           
+
                          
                         </div>    
                          
@@ -64,7 +64,7 @@ export default function UserPageRemake(props) {
                     </div>
                 </div>
                     <div className="info-right pt-2 pr-0 col-8">
-                        <div className="profile__info shadow  bg-white rounded pl-4 pr-0">
+                        <div className="profile__info profile__info-general shadow  bg-white rounded pl-4 pr-0">
                          <h5 style={{color:"#000"}}>General Information</h5>
                          <div className="profile__table">
                     <table>
