@@ -1,0 +1,37 @@
+.sidebarmobile{
+    display: none;
+
+
+
+
+
+
+}
+.open-sidebar{
+    display: block;
+
+}
+
+@media screen and(max-width:900px) {
+    .sidebarmobile{
+        display: block;
+        position: fixed;
+        z-index: 999;
+        top: 8px;
+        left: 5px;
+       
+        i{
+           
+            &::before{
+                width: 100%;
+            }
+             color: yellow;
+            width: 50px !important;
+            height: 50px !important;
+        }
+       
+    }
+
+    
+}
+

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 function SidebarUser() {
   return (
-    <div className="sidebar__wrapper shadow  bg-white rounded">
+    <div className="sidebar__wrapper sidebar__responsive shadow  bg-white rounded">
       <div className="sidebar-avatar pt-5">
         <div className="container text-center">
           <img
@@ -17,66 +17,70 @@ function SidebarUser() {
       </div>
       <div className="sidebar-li pl-2 ">
         <ul>
+            
           <Link to="/user/homepage">
-            <li className="pt-4 bg-white ">
+            <li className=" shadow-sm bg-white py-2 ">
               <span className="mx-3">
                 <i class="fa fa-home"></i>
               </span>
               Home
             </li>
           </Link>
-          <hr />
+        
           <Link to="/user/message">
-            <li className="bg-white ">
+            <li className="shadow-sm bg-white py-2 ">
               <span className="mx-3">
                 <i class="fa fa-comments"></i>
               </span>
               Message
             </li>
           </Link>
-          <hr />
+         
           <Link to="/user/group">
-            <li className="bg-white ">
+            <li className="shadow-sm bg-white py-2 ">
               <span className="mx-3">
                 <i class="fa fa-users"></i>
               </span>
               Groups
             </li>
           </Link>
-          <hr />
+      
           <Link to="/user/quiz">
-            <li className="bg-white ">
+            <li className="shadow-sm bg-white py-2 ">
               <span className="mx-3">
                 <i class="fa fa-question"></i>
               </span>
               Quiz
             </li>
           </Link>
+         
         </ul>
-        <hr />
+      
       </div>
 
-      <div className="mt-4 sidebar-logout pl-2">
+      <div className=" sidebar-logout pl-2">
         <ul>
           <Link to="/user/profile">
-            <li className="bg-white ">
+            <li className="shadow-sm bg-white py-2 ">
               <span className="mx-3">
                 <i class="fa fa-user"></i>
               </span>
               Profile
             </li>
           </Link>
-          <hr />
+         
           <Link>
-            <li className="bg-white ">
+            <li className="shadow-sm bg-white py-2 ">
               <span className="mx-3">
                 <i class="fa fa-circle-notch"></i>
               </span>
               Đăng xuất
             </li>
           </Link>
+        
         </ul>
       </div>
+    
     </div>
   );
 }

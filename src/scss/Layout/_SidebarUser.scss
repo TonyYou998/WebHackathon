@@ -40,16 +40,40 @@
        
     }
     .sidebar-logout{
-        padding-top: 150px;
+        padding-top: 240px;
 
     }
  
 }
+.show{
+//     animation: show ;
+//    animation-duration: 1s;
+   transform: none !important;
+}
+.close{
+    // animation: close;
+    // animation-duration: 1s;
+    
+}
+@keyframes show{
+    0%{transform: translateX(-100%)}
+    // 50%{transform: translateX(50%)}
+     100%{transform: translateX(0%)}
 
+}
+@keyframes close{
+    0%{transform: translateX(0%)}
+    // 50%{transform: translateX(50%)}
+     100%{transform: translateX(-100%)}
+
+}
 
 @media screen and (max-width:900px) {
     .sidebar__wrapper{
-        display: none;;
+        // display: none;
+        transform: translateX(-100%);
+        width: 200px;
+        overflow: hidden;
     }
     .profile__wrapper{
         padding-left: 0 !important;
@@ -57,5 +81,8 @@
     .container-fluid{
         padding-right: 0 !important;
         padding-top:0;
+    }
+    .sidebar-logout{
+        padding-top: 0 !important;
     }
 }

@@ -28,7 +28,7 @@ export default function UserPageRemake(props) {
             </div>
           </div>
         </nav>
-        <div className="profile__info ">
+        <div className="profile__info profile__info-top ">
           <div className="profile__avatar">
             <img
               src="https://scontent-xsp1-3.xx.fbcdn.net/v/t1.6435-9/162082031_2880103468926566_4374364692726017034_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=C6DsZdLD-y0AX9PTFVs&_nc_ht=scontent-xsp1-3.xx&oh=8a7ed8065d23124cc035191a4f6118cd&oe=60A57B6C"
@@ -40,9 +40,9 @@ export default function UserPageRemake(props) {
           </div>
         </div>
       </div>
-      <div className="d-flex">
-        <div className="info-left col-4 pl-0">
-          <div className="intro my-2 shadow  bg-white rounded">
+      <div className=" pt-3 info-container ">
+        <div className="info-left col-12 col-sm-4 pl-0">
+          <div className="intro mb-2 shadow  bg-white rounded">
             <h4>Introdution</h4>
             <ul>
               <li style={{ color: "#16396a" }}>
@@ -77,7 +77,7 @@ export default function UserPageRemake(props) {
             </h6>
           </div>
         </div>
-        <div className="info-right pt-2 pr-0 col-8">
+        <div className="info-right   pr-0 col-12 col-sm-8">
           <div className="profile__info profile__info-general shadow  bg-white rounded pl-4 pr-0">
             <h5 style={{ color: "#000" }}>General Information</h5>
             <div className="profile__table">
