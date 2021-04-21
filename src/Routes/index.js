@@ -3,6 +3,7 @@ import PageMain from "../Container/PageMain";
 import ContactDetail from "../Container/PageMain/ContactDetail";
 import LoginPage from "../Container/HomeTemplate/LoginPage/LoginPage";
 import RegisterPage from "../Container/HomeTemplate/RegisterPage/RegisterPage";
+import { UserPageRemake } from "../Container/UserTemplate/UserPageRemake";
 const routesHome = [
   {
     exact: true,
@@ -27,4 +28,14 @@ const routesHome = [
 ];
 
 
-export { routesHome };
+
+
+const routesUser=[
+    {
+        exact:false,
+        path:"/user/profile",
+        Component:UserPageRemake,
+    }
+]
+
+export {routesHome,routesUser};
