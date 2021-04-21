@@ -53,3 +53,12 @@
     // text-align: center;gi
 }
 
+@media screen and (max-width:860px) {
+    .sidebar__wrapper{
+        display: none;;
+    }
+    .profile__wrapper{
+        padding-left: 0 !important;
+    }
+    
+}
