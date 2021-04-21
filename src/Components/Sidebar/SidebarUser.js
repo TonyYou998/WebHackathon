@@ -15,7 +15,7 @@ function SidebarUser() {
            <div className="sidebar-li pl-2">
                 <ul>
 
-                    <Link>
+                    <Link to="/user/homepage" >
 
                             <li  className="shadow-sm  pt-4 bg-white " >
                       
@@ -24,7 +24,7 @@ function SidebarUser() {
                        
                              </li>
                     </Link>
-                     <Link>
+                     <Link to="/user/message">
 
                             <li  className="shadow-sm  pt-4 bg-white " >
                         <span><i class="mx-2 fas fa-comments"></i>Message</span>
@@ -32,7 +32,7 @@ function SidebarUser() {
                        
                              </li>
                     </Link>
-                     <Link>
+                     <Link to="/user/group">
 
                             <li  className="shadow-sm  pt-4 bg-white " >
                     <span><i class="mx-2 fa fa-users"></i></span>Groups
@@ -40,7 +40,7 @@ function SidebarUser() {
                        
                              </li>
                     </Link>
-                     <Link>
+                     <Link to="/user/quiz">
 
                             <li  className="shadow-sm  pt-4 bg-white " >
                      
@@ -56,7 +56,7 @@ function SidebarUser() {
 
            <div className="sidebar-logout pl-2">
                  <ul>
-                    <Link>
+                    <Link to="/user/profile">
 
                             <li  className="shadow-sm  pt-4 bg-white " >
                       
@@ -69,7 +69,7 @@ function SidebarUser() {
 
                             <li  className="shadow-sm  pt-4 bg-white " >
                       
-                            <span><i class="fa fa-sign-in-alt"></i></span>Profile
+                            <span><i class="fa fa-sign-in-alt"></i></span>Logout
                         
                        
                              </li>
