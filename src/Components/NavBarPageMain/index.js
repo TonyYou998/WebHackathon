@@ -59,7 +59,20 @@ export default class NavBarPageMain extends Component {
                         Liên hệ
                       </a>
                     </li>
+
                     <hr />
+                      <Link to="/dangnhap" className="text-decoration-none">
+                   <Button type="button " className="btn-pink px-3">
+             
+                         Đăng nhập
+                 </Button>
+             </Link>
+
+           <Link to="/dangky" className="text-decoration-none">
+                   <Button type="button " className="ml-3 px-3 btn-outline-pink">
+              Đăng kí
+            </Button>
+           </Link>
                   </ul>
                 </div>
               </div>
@@ -86,15 +99,23 @@ export default class NavBarPageMain extends Component {
                   Liên hệ
                 </a>
               </li>
+              
             </ul>
           </div>
           <div className="d-none d-md-block">
-            <Button type="button " className="btn-pink px-3">
-              Đăng nhập
-            </Button>
-            <Button type="button " className="ml-3 px-3 btn-outline-pink">
+             <Link to="/dangnhap" className="text-decoration-none">
+                   <Button type="button " className="btn-pink px-3">
+             
+                         Đăng nhập
+                 </Button>
+             </Link>
+
+           <Link to="/dangky" className="text-decoration-none">
+                   <Button type="button " className="ml-3 px-3 btn-outline-pink">
               Đăng kí
             </Button>
+           </Link>
+           
           </div>
         </div>
       </nav>
