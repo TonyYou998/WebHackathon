@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {WOW} from 'wowjs';
 import Axios from 'axios';
-
+import swal from 'sweetalert';
 export default function LoginPage() {
     useEffect(() => {
         const wow = new WOW(
@@ -40,7 +40,12 @@ export default function LoginPage() {
         })
 
         promise.then(res => {
-            console.log(res.data)
+            swal({
+                title: "Đăng nhập thành công",
+                text: "Chào mừng bạn đến với Social Study!",
+                icon: "success",
+                button: "OK",
+            })
         })
         promise.catch(err => {
             console.log(err.response.data);
