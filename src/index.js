@@ -11,6 +11,7 @@ import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "jquery/dist/jquery.min.js";
+import $ from 'jquery'; 
 import "popper.js/dist/umd/popper.min.js";
 import "animate.css/animate.min.css";
 import "font-awesome/css/font-awesome.min.css";
