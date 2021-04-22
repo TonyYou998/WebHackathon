@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import {WOW} from 'wowjs';
-
+import { postAPIRegister } from '../../../Services/Service';
+import Axios from 'axios';
+import swal from 'sweetalert';
 export default function RegisterPage() {
 
     useEffect(() => {
@@ -107,8 +109,22 @@ export default function RegisterPage() {
             values: newValues,
             errors: newErrors
         })
-
-        
+    }
+ 
+    let handle = () => {
+    //    e.preventDefault();
+       postAPIRegister.POST(userRegister.values).then(res => {
+        swal({
+            title: "ĐĂNG NHẬP THÀNH CÔNG",
+            text: "Hãy xác minh tài khoản email",
+            icon: "success",
+            button: "OK",
+        })
+        //    console.log(res.data);
+       })
+       .catch (err => {
+           console.log(err.response.data);
+       })
     }
     return (
         <div className='dang-ky-body'>
@@ -142,7 +158,7 @@ export default function RegisterPage() {
 
                         <div className='inputBox'>
                             <span className='details'>Mật khẩu</span>
-                            <input onChange={handleChange} name='matKhau' type='text' placeholder="Nhập mật khẩu bạn" required />
+                            <input onChange={handleChange} name='matKhau' type='password' placeholder="Nhập mật khẩu bạn" required />
                             <p className='text-center text-danger'>{userRegister.errors.matKhau}</p>
                         </div>
 
@@ -160,7 +176,10 @@ export default function RegisterPage() {
                     </div>
 
                     <div className='button'>
-                            {userRegister.valid ? <button>Đăng ký</button> : <button disabled style={{cursor:'not-allowed'}} >Đăng ký</button>}
+                            {userRegister.valid ? <button onClick={(e) => {
+                                e.preventDefault();
+                                handle();
+                            }}>Đăng ký</button> : <button disabled style={{cursor:'not-allowed'}} >Đăng ký</button>}
                         </div>
                 </form>
             </div>
