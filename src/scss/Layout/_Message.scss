@@ -66,6 +66,7 @@
     }
     .all__message{
         font-size:12px ;
+
         img{
             width: 30px;
             height: 30px;
@@ -82,4 +83,14 @@
         display: none !important;
     }
    
+}
+@media screen and (max-width:576px) {
+
+    .message_name{
+        display: none;
+    }
+    .message-item {
+        width: 20px;
+        height: 20px;
+    }
 }
