@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {WOW} from 'wowjs';
-import { postLoginApi } from '../../../Services/Services';
+// import { postLoginApi } from '../../../Services/Services';
+import Axios from 'axios';
 
 export default function RegisterPage() {
 
@@ -112,11 +113,21 @@ export default function RegisterPage() {
         
     }
 
-    let onSubmit = (e) => {
-        e.preventDefault();
-        postLoginApi.PostLoginApi(userRegister.values).then(res => {
+    let onSubmit = (data) => {
+        let promise = Axios({
+            url:'https://hackathon-be-dev.herokuapp.com/users',
+            method:'POST',
+            headers: {
+                "Content-Type": "application/json"
+            },
+            data:JSON.stringify(data)
+        })
+
+        promise.then(res => {
             console.log(res.data)
-        }).catch(err => {
+        })
+
+        promise.catch(err => {
             console.log(err.response.data);
         })
     }
@@ -128,37 +139,37 @@ export default function RegisterPage() {
                     <div className='user-details'>
                         <div className='inputBox'>
                             <span className='details'>Họ tên</span>
-                            <input onChange={handleChange} name='hoTen' type='text' placeholder="Nhập họ tên bạn" required />
+                            <input onChange={handleChange} name='hoTen' type='text' placeholder="Nhập họ tên" required />
                             <p className='text-center text-danger'>{userRegister.errors.hoTen}</p>
                         </div>
 
                         <div className='inputBox'>
                             <span className='details'>Email</span>
-                            <input onChange={handleChange} name='email' type='email' placeholder="Nhập email của bạn" required />
+                            <input onChange={handleChange} name='email' type='email' placeholder="Nhập email" required />
                             <p className='text-center text-danger'>{userRegister.errors.email}</p>
                         </div>
 
                         <div className='inputBox'>
                             <span className='details'>Số điện thoại</span>
-                            <input name='soDt' onChange={handleChange} type='soDt' placeholder="Nhập số điện thoại bạn" required />
+                            <input name='soDt' onChange={handleChange} type='soDt' placeholder="Nhập số điện thoại" required />
                             <p className='text-center text-danger'>{userRegister.errors.soDt}</p>
                         </div>
 
                         <div className='inputBox'>
                             <span className='details'>Tài khoản</span>
-                            <input onChange={handleChange} name='taiKhoan' type='text' placeholder="Nhập tài khoản bạn" required />
+                            <input onChange={handleChange} name='taiKhoan' type='text' placeholder="Nhập tài khoản" required />
                             <p className='text-center text-danger'>{userRegister.errors.taiKhoan}</p>
                         </div>
 
                         <div className='inputBox'>
                             <span className='details'>Mật khẩu</span>
-                            <input onChange={handleChange} name='matKhau' type='text' placeholder="Nhập mật khẩu bạn" required />
+                            <input onChange={handleChange} name='matKhau' type='text' placeholder="Nhập mật khẩu" required />
                             <p className='text-center text-danger'>{userRegister.errors.matKhau}</p>
                         </div>
 
                         <div className='inputBox'>
                             <span className='details'>Mã lớp</span>
-                            <input onChange={handleChange} name='maLop' type='text' placeholder="Nhập mã lớp bạn" required />
+                            <input onChange={handleChange} name='maLop' type='text' placeholder="Nhập mã lớp" required />
                             <p className='text-center text-danger'>{userRegister.errors.maLop}</p>
                         </div>
 
@@ -168,10 +179,10 @@ export default function RegisterPage() {
                             <p className='text-center text-danger'>{userRegister.errors.role}</p>
                         </div>
                     </div>
-
                     <div className='button'>
-                            {userRegister.valid ? <button onClick={() => {
-                                onSubmit();
+                            {userRegister.valid ? <button onClick={(e) => {
+                                e.preventDefault();
+                                onSubmit(userRegister.values);
                             }}>Đăng ký</button> : <button disabled style={{cursor:'not-allowed'}} >Đăng ký</button>}
                         </div>
                 </form>
