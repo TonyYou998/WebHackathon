@@ -24,6 +24,7 @@
     "react-scripts": "4.0.3",
     "reactjs-counter": "^0.5.0",
     "redux-thunk": "^2.3.0",
+    "sweetalert": "^2.1.2",
     "web-vitals": "^1.1.1",
     "wowjs": "^1.1.3"
   },
