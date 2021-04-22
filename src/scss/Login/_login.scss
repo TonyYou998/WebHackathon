@@ -67,8 +67,8 @@
             position: relative;
             .containerr {
                 position: relative;
-                width: 600px;
-                min-height: 600px;
+                width: 500px;
+                min-height: 500px;
                 background: rgba(255,255,255,0.1);
                 border-radius: 10px;
                 display: flex;
@@ -255,4 +255,16 @@
     }
 
 
+}
+
+
+@media (max-width:301px) {
+    .dang-nhap-body {
+        .box {
+            .containerr {
+                width: 450px;
+                min-height: 450px;
+            }
+        }
+    }
 }
