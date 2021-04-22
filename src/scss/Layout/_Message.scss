@@ -8,7 +8,7 @@
         height: 50px;
         border-radius: 50%;
         border:
-#6e86c8 2px solid
+    #6e86c8 2px solid
     }
     .message-item{
         cursor: pointer;
@@ -29,6 +29,7 @@
 .user_name{
     background-color: black;
     cursor: pointer;
+   
     img{
         
         width:50px;
@@ -57,4 +58,28 @@
         }
         }
     }
+}
+
+@media screen and (max-width:900px){
+    .message__wrapper{
+        padding-left: 0 !important;
+    }
+    .all__message{
+        font-size:12px ;
+        img{
+            width: 30px;
+            height: 30px;
+        }
+        padding-left:  0 !important;
+        padding-right: 0 !important;
+    }
+    
+    
+}
+@media screen and (max-width:680px) {
+
+    .message-ib{
+        display: none !important;
+    }
+   
 }
