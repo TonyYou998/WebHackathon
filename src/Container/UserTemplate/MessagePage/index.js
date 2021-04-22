@@ -38,8 +38,8 @@ export function MessagePage(props) {
                           <span style={{color:"#6e86c8"}}>Nguyễn Khải Đăng</span>  
                         </div>
                         <div className="type-text shadow-sm">
-                            <spen> <input placeholder=""       
-                                 type="text"/></spen><button className="btn btn-primary" style={{borderRadius:"40px"}}>Send</button>
+                            <span> <input placeholder=""       
+                                 type="text"/></span><button className="btn btn-primary button-send" style={{borderRadius:"40px"}}>Send</button>
                                
                                 
                             
