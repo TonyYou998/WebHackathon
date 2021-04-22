@@ -1,0 +1,60 @@
+.all__message{
+    background-color: black;
+    height: 100vh;
+    padding:0 10px;
+
+    img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border:
+#6e86c8 2px solid
+    }
+    .message-item{
+        cursor: pointer;
+        &:hover{
+            box-shadow: 0 .125rem .25rem rgba(0,0,0,.375)!important;
+            transition: all .4s;
+        }
+        .message_name{
+            color: #6e86c8;
+        }
+    }
+}
+.message__wrapper{
+    padding-left: 320px;
+    width: 100%;
+}
+
+.user_name{
+    background-color: black;
+    cursor: pointer;
+    img{
+        
+        width:50px;
+        height: 50px;
+        border-radius: 50%;
+        border:solid 2px #6e86c8 ;
+    }
+}
+.currend__message{
+    width: 100%;
+    position: relative  ;
+    .type-text{
+        position: absolute;
+        bottom: 30px;
+        width: 90%;
+           border-radius: 40px;
+             overflow: hidden;
+        background-color: #fff;
+        padding:4px 0px 4px 12px;
+        border:2px #6e86c8 solid;
+        input{
+            width: 92%;
+            border:0;
+        &:focus{
+            outline: none;
+        }
+        }
+    }
+}
