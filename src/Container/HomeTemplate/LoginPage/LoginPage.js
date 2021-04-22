@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {WOW} from 'wowjs';
+import Axios from 'axios';
 
 export default function LoginPage() {
     useEffect(() => {
@@ -13,7 +14,7 @@ export default function LoginPage() {
           wow.init();
     },[])
 
-
+   
     
 
     const [userLogin,setUserLogin] = useState({
@@ -27,6 +28,24 @@ export default function LoginPage() {
         },
         valid:false
     })
+
+    let onSubmit = (data) => {
+        let promise = Axios({
+            url:'https://hackathon-be-dev.herokuapp.com/users/login',
+            method:'POST',
+            headers: {
+                "Content-Type": "application/json"
+            },
+            data:JSON.stringify(data)
+        })
+
+        promise.then(res => {
+            console.log(res.data)
+        })
+        promise.catch(err => {
+            console.log(err.response.data);
+        })
+    }
 
     useEffect(() => {
         checkValid();
@@ -88,10 +107,13 @@ export default function LoginPage() {
                                     <p className='text-center text-danger'>{userLogin.errors.matKhau}</p>
                                 </div>
                                 <div className="inputBox text-center">          
-                                    {userLogin.valid ? <button className='btn'>Đăng Nhập</button> : <button disabled style={{cursor:'not-allowed'}} className='btn'>Đăng Nhập</button>}
+                                    {userLogin.valid ? <button className='btn' onClick ={(e) => {
+                                        e.preventDefault();
+                                        onSubmit(userLogin.values); 
+                                    }}>Đăng Nhập</button> : <button disabled style={{cursor:'not-allowed'}} className='btn'>Đăng Nhập</button>}
                                 </div>
                                 <p className='forget'>Quên mật khẩu ? <a href="#">Bấm ở đây</a></p>
-                                <p className='signup'>Bạn chưa có tài khoản ? <a onClick={() => {
+                                <p className='signup'>Bạn chưa có tài khoản ? <a onClick={(e) => {
                                     
                                 }} href="/dangky">Đăng Ký</a></p>
                             </form>
