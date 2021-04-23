@@ -10,7 +10,8 @@ function GroupsPage() {
        
            <div className="group-container ">
                <div className="d-row   ">
-                    <GroupItem/>
+                     <div className="content__wrapper" style={{overflowY:"scroll",height:"500px"}}>
+                     <GroupItem/>
                     <GroupItem/>
                      <GroupItem/>
                      <GroupItem/>
@@ -18,6 +19,8 @@ function GroupsPage() {
                      <GroupItem/>
                      <GroupItem/>
                       <GroupItem/>
+                      </div>
+                    
                        
                       
                       
