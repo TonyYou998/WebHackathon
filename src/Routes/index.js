@@ -11,6 +11,7 @@ import QuizPage from "../Container/UserTemplate/QuizPage";
 import taoKenh from "../Container/UserTemplate/QuizPage/taoKenh";
 import thamGia from "../Container/UserTemplate/QuizPage/thamGia";
 import BoCauHoi from "../Container/UserTemplate/QuizPage/BoCauHoi";
+import GroupPage from "../Container/UserTemplate/GroupsPage/GroupPage";
 const routesHome = [
   {
     exact: true,
@@ -74,6 +75,11 @@ const routesUser = [
     exact: false,
     path: "/user/thamgia",
     Component: thamGia,
+  },
+  {
+    exact: false,
+    path: "/user/groupid",
+    Component: GroupPage,
   },
 ];
 
