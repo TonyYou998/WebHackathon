@@ -1,6 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 function SidebarUser() {
+  let history=useHistory();
+  const handleLogout=()=>{
+      localStorage.removeItem("public_key");
+      history.push("/");
+  }
   return (
     <div className="sidebar__wrapper sidebar__responsive shadow  bg-white rounded">
       <div className="sidebar-avatar pt-5">
@@ -12,7 +17,7 @@ function SidebarUser() {
           <h5 style={{ color: "#5d64a5", fontWeight: "700" }} className="pt-2">
             Tan Vuu
           </h5>
-          <h6>Teacher</h6>
+          <h6>Học Sinh</h6>
         </div>
       </div>
       <div className="sidebar-li pl-2 ">
@@ -23,7 +28,7 @@ function SidebarUser() {
               <span className="mx-3">
                 <i class="fa fa-home"></i>
               </span>
-              Home
+              Trang chủ
             </li>
           </Link>
         
@@ -32,7 +37,7 @@ function SidebarUser() {
               <span className="mx-3">
                 <i class="fa fa-comments"></i>
               </span>
-              Message
+              Tin nhắn
             </li>
           </Link>
          
@@ -41,7 +46,7 @@ function SidebarUser() {
               <span className="mx-3">
                 <i class="fa fa-users"></i>
               </span>
-              Groups
+              Nhóm
             </li>
           </Link>
       
@@ -50,7 +55,7 @@ function SidebarUser() {
               <span className="mx-3">
                 <i class="fa fa-question"></i>
               </span>
-              Quiz
+              Kiểm tra
             </li>
           </Link>
          
@@ -65,12 +70,14 @@ function SidebarUser() {
               <span className="mx-3">
                 <i class="fa fa-user"></i>
               </span>
-              Profile
+              Thông tin
             </li>
           </Link>
          
           <Link>
-            <li className="shadow-sm bg-white py-2 ">
+            <li className="shadow-sm bg-white py-2 " onClick={()=>{
+              handleLogout();
+            }}>
               <span className="mx-3">
                 <i class="fa fa-circle-notch"></i>
               </span>

@@ -38,30 +38,30 @@ export default function UserPageRemake(props) {
             ></img>
           </div>
           <div className="text-white pl-3">
-            <h5>Tan Vuu</h5>
+            <h5>username</h5>
           </div>
         </div>
       </div>
       <div className=" pt-3 info-container ">
         <div className="info-left col-12 col-sm-4 pl-0">
           <div className="intro mb-2 shadow  bg-white rounded">
-            <h4>Introdution</h4>
+            <h4>Thông Tin</h4>
             <ul>
               <li style={{ color: "#16396a" }}>
                 {" "}
-                <span style={{ color: "black" }}>Fullname </span>Tan Vuu{" "}
+                <span style={{ color: "black" }}>Họ Tên </span>username{" "}
               </li>
               <li style={{ color: "#16396a" }}>
                 {" "}
-                <span style={{ color: "black" }}>Class </span>ATCL2019.1{" "}
+                <span style={{ color: "black" }}>Lớp </span>ATCL2019.1{" "}
               </li>
               <li style={{ color: "#16396a" }}>
                 {" "}
-                <span style={{ color: "black" }}>ID </span>19520931{" "}
+                <span style={{ color: "black" }}>MSSV </span>1951881{" "}
               </li>
               <li style={{ color: "#16396a" }}>
                 {" "}
-                <span style={{ color: "black" }}>Academic Year </span>2021{" "}
+                <span style={{ color: "black" }}>Năm Học </span>2021{" "}
               </li>
             </ul>
           </div>
@@ -75,25 +75,25 @@ export default function UserPageRemake(props) {
 
             <h6 style={{ color: "#000 " }} className="py-4">
               {" "}
-              <span>currently activity:</span> Web hackathon
+              <span>Hoạt Động Đang Diễn Ra:</span> Web hackathon
             </h6>
           </div>
         </div>
         <div className="info-right   pr-0 col-12 col-sm-8">
           <div className="profile__info profile__info-general shadow  bg-white rounded pl-4 pr-0">
-            <h5 style={{ color: "#000" }}>General Information</h5>
+            <h5 style={{ color: "#000" }}>Thông tin chi tiết</h5>
             <div className="profile__table">
               <table>
                 <tbody>
                   <tr>
-                    <th style={{ width: "30%" }}>Academic Year</th>
+                    <th style={{ width: "30%" }}>Năm Học</th>
 
                     <td>2021</td>
                   </tr>
                   <tr>
-                    <th style={{ width: "30%" }}>Gender</th>
+                    <th style={{ width: "30%" }}>Giới tính</th>
 
-                    <td>Male</td>
+                    <td>nam</td>
                   </tr>
                   <tr>
                     <th style={{ width: "30%" }}>Email</th>
@@ -101,32 +101,32 @@ export default function UserPageRemake(props) {
                     <td>tanvuu998@gmail.com</td>
                   </tr>
                   <tr>
-                    <th style={{ width: "30%" }}>Email</th>
+                    <th style={{ width: "30%" }}>Ngày sinh</th>
 
-                    <td>06/06/2001</td>
+                    <td>06/06/1900</td>
                   </tr>
                   <tr>
-                    <th style={{ width: "30%" }}>Phone </th>
+                    <th style={{ width: "30%" }}>SĐt </th>
 
-                    <td>0368510465</td>
+                    <td>0366610465</td>
                   </tr>
                   <tr>
-                    <th style={{ width: "30%" }}>Address </th>
+                    <th style={{ width: "30%" }}>Địa chỉ </th>
 
                     <td>Tien Giang</td>
                   </tr>
                   <tr>
-                    <th style={{ width: "30%" }}>School </th>
+                    <th style={{ width: "30%" }}>Trường </th>
 
                     <td>UIT-VNU</td>
                   </tr>
                   <tr>
-                    <th style={{ width: "30%" }}>Language </th>
+                    <th style={{ width: "30%" }}>Ngôn ngữ </th>
 
                     <td>Vietnamese</td>
                   </tr>
                   <tr>
-                    <th style={{ width: "30%" }}>Country </th>
+                    <th style={{ width: "30%" }}>Quốc tich </th>
 
                     <td>Vietnam</td>
                   </tr>

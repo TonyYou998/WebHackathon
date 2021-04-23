@@ -5,14 +5,14 @@ function JoinClassButton() {
         <div>
   
   <button type="button" className="btn btn-warning ml-2" data-toggle="modal" data-target="#joinclassmodal">
-    Join Class
+    Tham Gia Lớp
   </button>
   
   <div className="modal fade" id="joinclassmodal" tabIndex={-1} role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div className="modal-dialog modal-dialog-centered" role="document">
       <div className="modal-content">
         <div className="modal-header">
-          <h5 className="modal-title" id="exampleModalLongTitle">Join Class</h5>
+          <h5 className="modal-title" id="exampleModalLongTitle">Tham Gia</h5>
           <button type="button" className="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>

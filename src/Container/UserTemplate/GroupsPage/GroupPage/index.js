@@ -8,7 +8,7 @@ export default function GroupPage(props) {
     return (
         <div className="w-100 group__content">
              <div className="group__name   bg-light shadow py-4 pl-4  mr-5">
-                    Web Design
+                    Thiết kế web
             </div>
             <div class="pl-md-5 pt-4 all__conversation">
                 <Status/>
