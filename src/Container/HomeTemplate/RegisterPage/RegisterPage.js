@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {WOW} from 'wowjs';
+import { postLoginApi } from '../../../Services/Services';
 
 export default function RegisterPage() {
 
@@ -110,6 +111,15 @@ export default function RegisterPage() {
 
         
     }
+
+    let onSubmit = (e) => {
+        e.preventDefault();
+        postLoginApi.PostLoginApi(userRegister.values).then(res => {
+            console.log(res.data)
+        }).catch(err => {
+            console.log(err.response.data);
+        })
+    }
     return (
         <div className='dang-ky-body'>
             <div className='containerr wow animate__backInLeft'>
@@ -160,7 +170,9 @@ export default function RegisterPage() {
                     </div>
 
                     <div className='button'>
-                            {userRegister.valid ? <button>Đăng ký</button> : <button disabled style={{cursor:'not-allowed'}} >Đăng ký</button>}
+                            {userRegister.valid ? <button onClick={() => {
+                                onSubmit();
+                            }}>Đăng ký</button> : <button disabled style={{cursor:'not-allowed'}} >Đăng ký</button>}
                         </div>
                 </form>
             </div>
