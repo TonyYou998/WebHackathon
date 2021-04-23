@@ -162,7 +162,7 @@ export default class ThongTin extends Component {
                 </div>
                 <div className="d-none d-md-block leftbox">
                   <div className="ml-3 pl-5 mt-5">
-                    <h3 className="text-bluedark">Minh Hoàng</h3>
+                    <h3 className="text-bluedark">Nguyễn Văn Minh Hoàng</h3>
                     <p className="mb-0">Back end</p>
                     <p className="mb-0">
                       Sinh viên năm 2 - Đại học Công Nghệ Thông Tin
@@ -181,7 +181,7 @@ export default class ThongTin extends Component {
                       }}
                       alt=""
                     />
-                    <h3 className="text-bluedark">Minh Hoàng</h3>
+                    <h3 className="text-bluedark">Nguyễn Văn Minh Hoàng</h3>
                     <p className="mb-0">Back End</p>
                     <p className="mb-0">
                       Sinh viên năm 2 - Đại học Công Nghệ Thông Tin

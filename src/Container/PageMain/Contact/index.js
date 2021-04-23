@@ -46,7 +46,7 @@ export default class Contact extends Component {
                     className="w-100 contact-content py-1 center  text-light  m-0 p-0 item-content text-center"
                     style={{ bottom: 0 }}
                   >
-                    <h3>Minh Hoang</h3>
+                    <h3>Nguyễn V.M Hoàng</h3>
                     <p className="d-none d-md-block">Back End</p>
                   </div>
                   <NavLink to="/contact">
