@@ -12,7 +12,7 @@ export default class ThongTin extends Component {
                   <div className="signup nodisplay"></div>
                   <div className=" signin overflow-hidden center">
                     <img
-                      src="./img/contact/dangNguyen.jpg"
+                      src="./img/contact/baoDuong.jpg"
                       style={{ height: 500 }}
                       alt=""
                     />
@@ -21,8 +21,8 @@ export default class ThongTin extends Component {
                 <div className="leftbox"></div>
                 <div className="rightbox d-none  d-md-block">
                   <div className="ml-3 pl-1 mt-5 position-relative">
-                    <h3 className="text-bluedark">Nguyễn Khải Đăng</h3>
-                    <p className="mb-0">Designer - Front-End Dev</p>
+                    <h3 className="text-bluedark">Dương Tuấn Bảo</h3>
+                    <p className="mb-0">Leader - Front-End Dev</p>
                     <p className="mb-0">
                       Sinh viên năm 2 - Đại học Công Nghệ Thông Tin
                     </p>
@@ -32,7 +32,7 @@ export default class ThongTin extends Component {
                 <div className="rightbox w-100 d-block d-md-none">
                   <div className=" center text-center position-relative">
                     <img
-                      src="./img/contact/dangNguyen.jpg"
+                      src="./img/contact/baoDuong.jpg"
                       style={{
                         height: 250,
                         transform: "translate(0px, -40px)",
@@ -40,8 +40,8 @@ export default class ThongTin extends Component {
                       }}
                       alt=""
                     />
-                    <h3 className="text-bluedark">Nguyễn Khải Đăng</h3>
-                    <p className="mb-0">Designer - Front-End Dev</p>
+                    <h3 className="text-bluedark">Dương Tuấn Bảo</h3>
+                    <p className="mb-0">Leader - Front-End Dev</p>
                     <p className="mb-0">
                       Sinh viên năm 2 - Đại học Công Nghệ Thông Tin
                     </p>
@@ -60,7 +60,7 @@ export default class ThongTin extends Component {
                 >
                   <div className="signup overflow-hidden center">
                     <img
-                      src="./img/contact/dangNguyen.jpg"
+                      src="./img/contact/vuuTan.jpg"
                       style={{ height: 500 }}
                       alt=""
                     />
@@ -69,8 +69,8 @@ export default class ThongTin extends Component {
                 </div>
                 <div className="d-none d-md-block leftbox">
                   <div className="ml-3 pl-5 mt-5">
-                    <h3 className="text-bluedark">Nguyễn Khải Đăng</h3>
-                    <p className="mb-0">Designer - Front-End Dev</p>
+                    <h3 className="text-bluedark">Vưu Hoàng Phạm Tấn</h3>
+                    <p className="mb-0">Deploy web - Front-End Dev</p>
                     <p className="mb-0">
                       Sinh viên năm 2 - Đại học Công Nghệ Thông Tin
                     </p>
@@ -80,7 +80,7 @@ export default class ThongTin extends Component {
                 <div className="d-block d-md-none leftbox w-100">
                   <div className="center text-center">
                     <img
-                      src="./img/contact/dangNguyen.jpg"
+                      src="./img/contact/vuuTan.jpg"
                       style={{
                         height: 250,
                         transform: "translate(0px, -40px)",
@@ -88,8 +88,8 @@ export default class ThongTin extends Component {
                       }}
                       alt=""
                     />
-                    <h3 className="text-bluedark">Nguyễn Khải Đăng</h3>
-                    <p className="mb-0">Designer - Front-End Dev</p>
+                    <h3 className="text-bluedark">Vưu Hoàng Phạm Tấn</h3>
+                    <p className="mb-0">Deploy web - Front-End Dev</p>
                     <p className="mb-0">
                       Sinh viên năm 2 - Đại học Công Nghệ Thông Tin
                     </p>
@@ -153,7 +153,7 @@ export default class ThongTin extends Component {
                 >
                   <div className="signup overflow-hidden center">
                     <img
-                      src="./img/contact/dangNguyen.jpg"
+                      src="./img/contact/MinhHoang.jpg"
                       style={{ height: 500 }}
                       alt=""
                     />
@@ -162,8 +162,8 @@ export default class ThongTin extends Component {
                 </div>
                 <div className="d-none d-md-block leftbox">
                   <div className="ml-3 pl-5 mt-5">
-                    <h3 className="text-bluedark">Nguyễn Khải Đăng</h3>
-                    <p className="mb-0">Designer - Front-End Dev</p>
+                    <h3 className="text-bluedark">Minh Hoàng</h3>
+                    <p className="mb-0">Back end</p>
                     <p className="mb-0">
                       Sinh viên năm 2 - Đại học Công Nghệ Thông Tin
                     </p>
@@ -173,7 +173,7 @@ export default class ThongTin extends Component {
                 <div className="d-block d-md-none leftbox w-100">
                   <div className="center text-center">
                     <img
-                      src="./img/contact/dangNguyen.jpg"
+                      src="./img/contact/MinhHoang.jpg"
                       style={{
                         height: 250,
                         transform: "translate(0px, -40px)",
@@ -181,8 +181,8 @@ export default class ThongTin extends Component {
                       }}
                       alt=""
                     />
-                    <h3 className="text-bluedark">Nguyễn Khải Đăng</h3>
-                    <p className="mb-0">Designer - Front-End Dev</p>
+                    <h3 className="text-bluedark">Minh Hoàng</h3>
+                    <p className="mb-0">Back End</p>
                     <p className="mb-0">
                       Sinh viên năm 2 - Đại học Công Nghệ Thông Tin
                     </p>
