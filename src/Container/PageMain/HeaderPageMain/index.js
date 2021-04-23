@@ -40,7 +40,7 @@ export default class HeaderPageMain extends Component {
                   fontWeight: 700,
                 }}
               >
-                SOCIAL STUDY
+                4.0 LEARNING
               </h1>
               <p
                 style={{ fontSize: 30 }}
@@ -78,7 +78,7 @@ export default class HeaderPageMain extends Component {
                   fontWeight: 700,
                 }}
               >
-                SOCIAL STUDY
+                4.0 LEARNING
               </h1>
               <p
                 style={{ fontSize: 30 }}

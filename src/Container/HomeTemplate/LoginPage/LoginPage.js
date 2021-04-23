@@ -38,7 +38,7 @@ export default function LoginPage() {
     promise.then((res) => {
       swal({
         title: "Đăng nhập thành công",
-        text: "Chào mừng bạn đến với Social Study!",
+        text: "Chào mừng bạn đến với 4.0 learing!",
         icon: "success",
         button: "OK",
       });
