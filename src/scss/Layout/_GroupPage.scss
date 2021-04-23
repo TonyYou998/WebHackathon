@@ -18,8 +18,35 @@
 @media screen and (max-width:900px  ) {
     .group-container{
         margin-left: 0px !important;
-        .group__item{
-            width: 100px;
+        
+         padding-top: 50px;
+    }
+    .content__wrapper{
+         height: 520px !important;
+    }
+    .group__buttons{
+        justify-content: left !important;
+    }
+}
+@media screen and (max-width:600px) {
+    .group-container{
+        padding-top: 10px;
+       
+        margin-left: 60px !important;
+    }
+    .content__wrapper{
+         height: 600px !important;
+    }
+    
+}
+@media screen and (max-width:400px) {
+    
+         .group-container{
+             padding-top: 0px;
+
+        margin-left: 20px !important;
+        .content__wrapper{
+            height: 600px !important;
         }
     }
     

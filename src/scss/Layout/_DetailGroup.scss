@@ -9,7 +9,7 @@
 .group__content{
     margin-left: 400px !important;
     .all__conversation{
-        height: 690px;
+        height: 700px;
         overflow-y: scroll
     }
     .put__question{
@@ -25,4 +25,20 @@
             }
         }
     }
+}
+
+@media screen and (max-width:900px) {
+.group__content{
+    margin-left: 0 !important;
+    .group__name{
+        width: 100%;
+    }
+}
+.all__conversation{
+    height: 100% !important;
+}
+.put__question{
+    display: none;
+}
+
 }
