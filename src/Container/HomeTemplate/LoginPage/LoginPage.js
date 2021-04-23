@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import {WOW} from 'wowjs';
 import Axios from 'axios';
 import swal from 'sweetalert';
+import { useHistory } from 'react-router';
 export default function LoginPage() {
     useEffect(() => {
         const wow = new WOW(
@@ -15,7 +16,7 @@ export default function LoginPage() {
     },[])
 
    
-    
+    let history=useHistory();
 
     const [userLogin,setUserLogin] = useState({
         values:{
@@ -40,15 +41,20 @@ export default function LoginPage() {
         })
 
         promise.then(res => {
+            
             swal({
                 title: "Đăng nhập thành công",
                 text: "Chào mừng bạn đến với Social Study!",
                 icon: "success",
                 button: "OK",
-            })
+            });
+            localStorage.setItem("public_key",res.data.token);
+            history.push("/user/profile");
+            
         })
         promise.catch(err => {
             console.log(err.response.data);
+            
         })
     }
 

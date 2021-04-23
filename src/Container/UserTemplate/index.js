@@ -1,5 +1,5 @@
 import React from 'react'
-import {Route} from "react-router-dom";
+import {Route, useHistory,Redirect} from "react-router-dom";
 import SidebarUser from '../../Components/Sidebar/SidebarUser'
 import SidebarUserMobile from '../../Components/SidebarUserMobile';
 
@@ -8,7 +8,9 @@ import SidebarUserMobile from '../../Components/SidebarUserMobile';
 
 
  function LayoutUser(props){
-
+        let history=useHistory();
+        if(!localStorage.getItem("public_key"))
+            return <Redirect to="/dangnhap" />
         const renderSideBar=()=>{
             return <SidebarUser/>
         }
