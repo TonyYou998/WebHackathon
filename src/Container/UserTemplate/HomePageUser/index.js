@@ -1,6 +1,7 @@
 import { Button } from "@material-ui/core";
 import React from "react";
 import Status from "./Status";
+import StatusVideo from "./Status_video";
 import ThongBaoDeadline from "./ThongBaoDeadline";
 
 export default function HomePageUser(props) {
@@ -11,10 +12,12 @@ export default function HomePageUser(props) {
           <ThongBaoDeadline />
 
           <Status />
+          <StatusVideo />
           <Status />
           <Status />
           <Status />
-          <Status />
+          <StatusVideo />
+          <StatusVideo />
           <Status />
           <Status />
           <Status />

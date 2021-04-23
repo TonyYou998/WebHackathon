@@ -1,7 +1,7 @@
 import { Button } from "@material-ui/core";
 import React, { Component } from "react";
 
-export default class Status extends Component {
+export default class StatusVideo extends Component {
   render() {
     return (
       <>
@@ -25,13 +25,27 @@ export default class Status extends Component {
                 </div>
               </div>
               <div className="col-12">
-                <div className="container">
-                  <img
-                    src="../img/contact/erro.jpg"
-                    alt=""
-                    className="w-100 bg-secondary"
-                    // style={{ height: "25rem" }}
-                  ></img>
+                <div className="container text-center ">
+                  <iframe
+                    className="d-none d-md-block w-100 "
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/KVHimR1vf0o"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <iframe
+                    className="w-100 d-block d-md-none"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/KVHimR1vf0o"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
                 </div>
               </div>
               <div className="col-12">

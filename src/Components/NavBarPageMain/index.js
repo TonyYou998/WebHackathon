@@ -59,18 +59,20 @@ export default class NavBarPageMain extends Component {
                         Liên hệ
                       </a>
                     </li>
-
                     <hr />
                     <Link to="/dangnhap" className="text-decoration-none">
-                      <Button type="button " className="btn-pink px-3">
+                      <Button
+                        type="button "
+                        className="ml-3 mb-2 btn-pink px-3 w-25"
+                      >
                         Đăng nhập
                       </Button>
                     </Link>
-
-                    <Link to="/dangky" className="text-decoration-none">
+                    <br />
+                    <Link to="/dangky" className="text-decoration-none ">
                       <Button
                         type="button "
-                        className="ml-3 px-3 btn-outline-pink"
+                        className="ml-3 px-3 btn-outline-pink w-25"
                       >
                         Đăng kí
                       </Button>
