@@ -10,6 +10,9 @@ export default function thamGia() {
           <div className="col-12 col-md-4 col-xl-2"></div>
           <div className="col-12 col-md-6 col-xl-10 text-center"></div>
           <TraLoiCauHoi />
+          <TraLoiCauHoi />
+          <TraLoiCauHoi />
+          <TraLoiCauHoi />
         </div>
       </div>
     </>
