@@ -1,0 +1,10 @@
+.create__input,.join__input{
+    border: 0;
+    padding:10px 0;
+    &:focus{
+        outline: none;
+    }
+    &::placeholder{
+        color: black;
+    }
+}

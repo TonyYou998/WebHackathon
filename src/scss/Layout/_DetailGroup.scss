@@ -1,0 +1,28 @@
+.group__name{
+    
+    
+    position: fixed;
+    // width: 100%;
+    width: 70%;
+    z-index: 99;
+}
+.group__content{
+    margin-left: 400px !important;
+    .all__conversation{
+        height: 690px;
+        overflow-y: scroll
+    }
+    .put__question{
+       
+        input{
+            width: 74%;
+            margin: 0 auto;
+            border: 0;
+            
+            border-radius: 40px;
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+}
