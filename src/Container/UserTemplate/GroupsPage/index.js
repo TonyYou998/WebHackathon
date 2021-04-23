@@ -1,17 +1,27 @@
 import React from 'react'
+import CreateClassButton from './Components/CreateClassButton'
+import GroupItem from './Components/GroupItem'
+import JoinClassButton from './Components/JoinClassButton'
 
 function GroupsPage() {
+
+    
     return (
-        <div>
-            <div className="group__wrapper ">
-                <div className="container-fluid d-row">
-                    <div className="group-item col-6">A</div>
-                    <div className="group-item col-6">B</div>
-                    <div className="group-item col-6">C</div>
-                    <div className="group-item col-6">D</div>
-                </div>
-            </div>
-        </div>
+       
+           <div className="group-container d-flex">
+               <div className="d-row" >
+                    <GroupItem/>
+                    <GroupItem/>
+                     <GroupItem/>
+                      <GroupItem/>
+                      
+               </div>
+               
+                  <CreateClassButton/>
+                  <JoinClassButton/>
+                 
+           </div>
+       
     )
 }
 
