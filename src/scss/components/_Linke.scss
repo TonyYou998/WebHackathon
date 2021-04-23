@@ -1,0 +1,58 @@
+$gray-light: #ebebeb;
+$red: #f45b69;
+$blue-light: #156d81;
+$blue-dark: #07313a;
+.like {
+    font-size: 0.6rem !important;
+    font-weight: 500 !important;
+    .like-button {
+        border-radius: 0.25rem;
+        &:hover .interact-options {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(-99%);
+            a {
+                opacity: 1;
+            }
+        }
+    }
+
+    .interact {
+        position: relative;
+        transform: scale(2);
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .interact-options {
+        position: absolute;
+        right: -150%;
+        border-radius: 2rem;
+        display: flex;
+        list-style: none;
+        opacity: 0;
+        pointer-events: none;
+        top: 0;
+        padding: 0rem 0.75rem 0rem;
+        transition: transform 200ms, opacity 200ms;
+
+        &:hover {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(-99%);
+        }
+
+        li {
+            a {
+                display: block;
+                opacity: 0;
+                transition: transform 200ms ease-in-out, opacity 200ms;
+
+                &:hover {
+                    transform: scale(1.5) translateY(0.25rem);
+                }
+            }
+        }
+    }
+}
