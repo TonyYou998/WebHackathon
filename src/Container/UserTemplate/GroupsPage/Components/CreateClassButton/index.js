@@ -4,7 +4,7 @@ function CreateClassButton() {
     return (
    <div>
   
-  <button type="button" className="btn btn-primary mt-5" data-toggle="modal" data-target="#exampleModalCenter">
+  <button type="button" className="btn btn-success mr-2" data-toggle="modal" data-target="#exampleModalCenter">
     Create Class
   </button>
   

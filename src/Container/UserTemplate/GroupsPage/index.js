@@ -8,19 +8,27 @@ function GroupsPage() {
     
     return (
        
-           <div className="group-container d-flex">
-               <div className="d-row" >
+           <div className="group-container ">
+               <div className="d-row   ">
                     <GroupItem/>
                     <GroupItem/>
                      <GroupItem/>
+                     <GroupItem/>
+                     <GroupItem/>
+                     <GroupItem/>
+                     <GroupItem/>
                       <GroupItem/>
+                       
+                      
                       
                </div>
-               
-                  <CreateClassButton/>
-                  <JoinClassButton/>
+               <div className="d-flex group__buttons pt-5">
+                     <CreateClassButton/>
+                     <JoinClassButton/>
+               </div>
                  
            </div>
+        
        
     )
 }
