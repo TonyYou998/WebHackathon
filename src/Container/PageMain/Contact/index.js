@@ -71,7 +71,7 @@ export default class Contact extends Component {
                     style={{ bottom: 0 }}
                   >
                     <h3>Vưu H.Phạm Tấn</h3>
-                    <p className="d-none d-md-block">Deploy - Front-end web</p>
+                    <p className="d-none d-md-block">Deploy - Front-end Dev</p>
                   </div>
                   <NavLink to="/contact">
                     <div className="overGradiant center">

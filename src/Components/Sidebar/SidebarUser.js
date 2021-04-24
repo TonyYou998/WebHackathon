@@ -58,14 +58,7 @@ function SidebarUser() {
               Kiểm tra
             </li>
           </Link>
-         
-        </ul>
-      
-      </div>
-
-      <div className=" sidebar-logout pl-2">
-        <ul>
-          <Link to="/user/profile">
+           <Link to="/user/profile">
             <li className="shadow-sm bg-white py-2 ">
               <span className="mx-3">
                 <i class="fa fa-user"></i>
@@ -84,9 +77,12 @@ function SidebarUser() {
               Đăng xuất
             </li>
           </Link>
-        
+         
         </ul>
+      
       </div>
+
+     
     
     </div>
   );

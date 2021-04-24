@@ -1,7 +1,7 @@
 
 .sidebar__wrapper{
     font-size: 40px;
-     height: 100vh;
+     height: 100% !important;
     position: fixed;
 
     z-index: 999;
@@ -39,10 +39,7 @@
         }
        
     }
-    .sidebar-logout{
-        padding-top: 240px;
-
-    }
+  
  
 }
 .show{
