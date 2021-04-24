@@ -33,7 +33,7 @@ export default function LoginPage() {
       loading:0,
     }
   )
-console.log(state);
+
 
   let onSubmit = (data) => {
       
@@ -56,7 +56,7 @@ console.log(state);
       });
        localStorage.setItem("public_key",res.data.token);
             setState({loading:0,})
-            history.push("/user/profile");
+            history.push("/user/homepage");
     });
     promise.catch((err) => {
       setState({loading:0,});

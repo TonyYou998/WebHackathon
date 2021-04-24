@@ -16,6 +16,6 @@ const Loading = styled.div`
 `;
 
 export default function Loader() {
-    console.log("real loader");
+    
   return <Loading primary></Loading>;
 }

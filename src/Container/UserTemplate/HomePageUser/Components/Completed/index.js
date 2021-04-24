@@ -11,7 +11,7 @@ export default function CompletedButton() {
   const [scroll, setScroll] = React.useState('paper');
 
   const handleClickOpen = (scrollType) => () => {
-      console.log("run");
+     
     setOpen(true);
     setScroll(scrollType);
   };
