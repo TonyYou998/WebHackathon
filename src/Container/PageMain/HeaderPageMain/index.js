@@ -1,6 +1,6 @@
 import { Button } from "@material-ui/core";
 import React, { Component } from "react";
-
+import {Link} from "react-router-dom";
 export default class HeaderPageMain extends Component {
   render() {
     return (
@@ -50,13 +50,13 @@ export default class HeaderPageMain extends Component {
                 Nơi trao đổi học tập dành riêng cho học sinh và giáo viên trong
                 mùa dịch covid
               </p>
-              <Button
+              <Link to="/dangnhap"
                 type="button "
                 className="btn-pink px-5 py-2 wow animate__fadeInDown"
                 data-wow-delay="0.6s"
               >
                 Bắt đầu
-              </Button>
+              </Link>
             </div>
             <div className="col-2"></div>
           </div>
