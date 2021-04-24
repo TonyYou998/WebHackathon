@@ -3,6 +3,7 @@ import {WOW} from 'wowjs';
 import Axios from 'axios';
 import swal from 'sweetalert';
 import { useHistory } from 'react-router';
+import Loader from '../../../Components/Loader';
 export default function LoginPage() {
   useEffect(() => {
     const wow = new WOW({
@@ -27,8 +28,16 @@ export default function LoginPage() {
     },
     valid: false,
   });
+  const [state,setState]=useState(
+    {
+      loading:0,
+    }
+  )
+console.log(state);
 
   let onSubmit = (data) => {
+      
+
     let promise = Axios({
       url: "https://hackathon-be-dev.herokuapp.com/users/login",
       method: "POST",
@@ -46,10 +55,15 @@ export default function LoginPage() {
         button: "OK",
       });
        localStorage.setItem("public_key",res.data.token);
+            setState({loading:0,})
             history.push("/user/profile");
     });
     promise.catch((err) => {
-      console.log(err.response.data);
+      setState({loading:0,});
+       alert("sai mật khẩu");
+      history.push("/dangnhap");
+     
+      
     });
   };
 
@@ -87,6 +101,8 @@ export default function LoginPage() {
     setUserLogin({ ...userLogin, valid: newValid });
   };
 
+ if(state.loading)
+    return <Loader/>
   return (
     <div className="dang-nhap-body">
       <section
@@ -134,6 +150,7 @@ export default function LoginPage() {
                       className="btn"
                       onClick={(e) => {
                         e.preventDefault();
+                        setState({loading:1,})
                         onSubmit(userLogin.values);
                       }}
                     >

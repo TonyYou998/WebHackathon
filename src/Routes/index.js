@@ -12,6 +12,7 @@ import taoKenh from "../Container/UserTemplate/QuizPage/taoKenh";
 import thamGia from "../Container/UserTemplate/QuizPage/thamGia";
 import BoCauHoi from "../Container/UserTemplate/QuizPage/BoCauHoi";
 import GroupPage from "../Container/UserTemplate/GroupsPage/GroupPage";
+import { Loader } from "../Components/Loader";
 const routesHome = [
   {
     exact: true,
@@ -41,6 +42,7 @@ const routesUser = [
     path: "/user/profile",
     Component: UserPageRemake,
   },
+  
   {
     exact: false,
     path: "/user/homepage",

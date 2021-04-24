@@ -1,8 +1,9 @@
 import React from "react";
+import Loader  from "../../../Components/Loader";
 
 
 export default function UserPageRemake(props) {
- 
+
   return (
     <div className="container-fluid profile__wrapper">
       <div
