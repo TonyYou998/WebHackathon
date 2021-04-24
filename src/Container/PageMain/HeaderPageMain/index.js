@@ -88,13 +88,13 @@ export default class HeaderPageMain extends Component {
                 Nơi trao đổi học tập dành riêng cho học sinh và giáo viên trong
                 mùa dịch covid
               </p>
-              <Button
+              <Link to="/dangnhap"
                 type="button "
                 className="btn-pink px-5 py-2 wow animate__fadeInDown"
                 data-wow-delay="0.6s"
               >
                 Bắt đầu
-              </Button>
+              </Link>
             </div>
             <div className="col-2"></div>
             <div className="col-12 wow animate__fadeInUp">
