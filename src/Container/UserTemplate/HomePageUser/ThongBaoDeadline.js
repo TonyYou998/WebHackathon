@@ -1,6 +1,7 @@
-import { Button } from "@material-ui/core";
+import { Button, Link } from "@material-ui/core";
 import React, { Component } from "react";
-
+import DeadlinesButton from "./Components/Deadlines";
+import  CompletedButton from "./Components/Completed";
 export default class ThongBaoDeadline extends Component {
   constructor(props) {
     super(props);
@@ -19,7 +20,7 @@ export default class ThongBaoDeadline extends Component {
           <div className="container-fluid">
             <div className="row">
               <div className="m-0 ml-md-5 col-6 col-md-3">
-                <Button
+                {/* <Button
                   className="mb-md-0   w-100 text-light bg-danger text-center center rounded overflow-hidden"
                   style={{ height: 100 }}
                 >
@@ -34,11 +35,15 @@ export default class ThongBaoDeadline extends Component {
                       <p className="m-0 pb-2">Xem chi tiết</p>
                     </div>
                   </div>
-                </Button>
+                </Button> */}
+                <DeadlinesButton/>
               </div>
               <div className="d-none d-md-block col-1"></div>
+             
               <div className="col-6 col-md-3">
-                <Button
+               
+                
+                <Button 
                   className="w-100 text-light bg-success text-center center rounded overflow-hidden"
                   style={{ height: 100 }}
                 >
@@ -54,10 +59,11 @@ export default class ThongBaoDeadline extends Component {
                     </div>
                   </div>
                 </Button>
+                
               </div>
               <div className=" d-none d-md-block col-1"></div>
               <div className=" d-none d-md-block col-md-3">
-                <Button
+                {/* <Button
                   className="w-100 text-light bg-warning text-center center rounded overflow-hidden"
                   style={{ height: 100 }}
                 >
@@ -72,7 +78,8 @@ export default class ThongBaoDeadline extends Component {
                       <p className="m-0 pb-2">Xem chi tiết</p>
                     </div>
                   </div>
-                </Button>
+                </Button> */}
+                <CompletedButton/>
               </div>
             </div>
           </div>

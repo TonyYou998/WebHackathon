@@ -15,7 +15,7 @@ function SidebarUser() {
             alt
           />
           <h5 style={{ color: "#5d64a5", fontWeight: "700" }} className="pt-2">
-            Tan Vuu
+            username
           </h5>
           <h6>Học Sinh</h6>
         </div>
@@ -46,7 +46,7 @@ function SidebarUser() {
               <span className="mx-3">
                 <i class="fa fa-users"></i>
               </span>
-              Nhóm
+              Lớp học
             </li>
           </Link>
       

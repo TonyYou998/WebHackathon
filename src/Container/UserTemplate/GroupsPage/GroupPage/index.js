@@ -1,14 +1,16 @@
 import React, { Fragment } from 'react'
 import Status from '../../HomePageUser/Status'
 import Question from './Components/Question'
+import ClassInfo from "./Components/ClassInfo";
 
 export default function GroupPage(props) {
     
 
     return (
         <div className="w-100 group__content">
-             <div className="group__name   bg-light shadow py-4 pl-4  mr-5">
-                    Thiết kế web
+             <div className="group__name   bg-light shadow py-4 pl-4  mr-5 d-flex">
+                    <div>Thiết kế web</div>
+                    <ClassInfo/>
             </div>
             <div class="pl-md-5 pt-4 all__conversation">
                 <Status/>

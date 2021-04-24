@@ -5,7 +5,7 @@ function CreateClassButton() {
    <div>
   
   <button type="button" className="btn btn-success mr-2" data-toggle="modal" data-target="#exampleModalCenter">
-    Tạo Học Lớp Mới
+    Tạo Lớp Học Mới
   </button>
   
   <div className="modal fade" id="exampleModalCenter" tabIndex={-1} role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -18,7 +18,7 @@ function CreateClassButton() {
           </button>
         </div>
         <div className="modal-body">
-         <input placeholder="Class's name " className="w-100 create__input"/>
+         <input placeholder="Nhập tên lớp " className="w-100 create__input"/>
         </div>
         <div className="modal-footer">
           <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
