@@ -1,9 +1,13 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 import { Link, useHistory } from "react-router-dom";
+import { actGetUserDataClear } from "../../Container/UserTemplate/UserPageRemake/Module/action";
 function SidebarUser() {
   let history=useHistory();
+  let dispatch=useDispatch();
   const handleLogout=()=>{
       localStorage.removeItem("public_key");
+      dispatch(actGetUserDataClear());
       history.push("/");
   }
   return (

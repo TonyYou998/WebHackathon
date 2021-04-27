@@ -3,8 +3,14 @@ import { WOW } from 'wowjs';
 // import { postLoginApi } from '../../../Services/Services';
 import Axios from 'axios';
 import swal from 'sweetalert';
+import Loader from '../../../Components/Loader';
+import { useHistory } from 'react-router';
 export default function RegisterPage() {
 
+    let [state,setState]=useState({
+        loading:0,
+    });
+    let history=useHistory();
     useEffect(() => {
         const wow = new WOW(
             { // default
@@ -130,6 +136,8 @@ export default function RegisterPage() {
                 icon: "success",
                 button: "OK",
             })
+            history.push("/dangnhap");
+            setState({loading:0,})
         })
 
         promise.catch(err => {
@@ -142,6 +150,8 @@ export default function RegisterPage() {
             console.log(err.response.data);
         })
     }
+    if(state.loading)
+        return <Loader/>
     return (
         <div className='dang-ky-body'>
             {/* <div className='containerr wow animate__backInLeft'>
@@ -252,6 +262,7 @@ export default function RegisterPage() {
                          <div className='form-controll text-center mt-5 w-100'>
                            {userRegister.valid ? <button onClick={(e) => {
                                e.preventDefault();
+                               setState({loading:1});
                                onSubmit(userRegister.values);
                            }} className=' w-100'>Đăng ký</button> : <button disabled style={{cursor:'not-allowed'}} className=' w-100'>Đăng ký</button>}
                         </div>

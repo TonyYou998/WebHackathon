@@ -1,9 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import Loader  from "../../../Components/Loader";
+import { actGetUserDataApi } from "./Module/action";
 
 
 export default function UserPageRemake(props) {
+  let dispatch=useDispatch();
 
+
+    let token=localStorage.getItem("public_key") ;
+        let data=useSelector(state=>state.userReducer.data);
+    useEffect(()=>{
+      
+      if(!data){
+          dispatch(actGetUserDataApi(token));
+         
+      }
+        
+
+
+    },[]);
+
+
+     
+    // console.log(data);
   return (
     <div className="container-fluid profile__wrapper">
       <div
@@ -39,7 +59,7 @@ export default function UserPageRemake(props) {
             ></img>
           </div>
           <div className="text-white pl-3">
-            <h5>username</h5>
+            <h5>{data && data.hoTen}</h5>
           </div>
         </div>
       </div>
@@ -49,17 +69,17 @@ export default function UserPageRemake(props) {
             <h4>Thông Tin</h4>
             <ul>
               <li style={{ color: "#16396a" }}>
-                {" "}
-                <span style={{ color: "black" }}>Họ Tên </span>username{" "}
+                
+                <span style={{ color: "black" }}>Họ Tên </span>{data && data.hoTen}
               </li>
               <li style={{ color: "#16396a" }}>
-                {" "}
-                <span style={{ color: "black" }}>Lớp </span>ATCL2019.1{" "}
+                
+                <span style={{ color: "black" }}>Lớp </span>{data && data.maLop}
               </li>
-              <li style={{ color: "#16396a" }}>
+              {/* <li style={{ color: "#16396a" }}>
                 {" "}
                 <span style={{ color: "black" }}>MSSV </span>1951881{" "}
-              </li>
+              </li> */}
               <li style={{ color: "#16396a" }}>
                 {" "}
                 <span style={{ color: "black" }}>Năm Học </span>2021{" "}
@@ -75,7 +95,7 @@ export default function UserPageRemake(props) {
             </div>
 
             <h6 style={{ color: "#000 " }} className="py-4">
-              {" "}
+              
               <span>Hoạt Động Đang Diễn Ra:</span> Web hackathon
             </h6>
           </div>
@@ -92,14 +112,14 @@ export default function UserPageRemake(props) {
                     <td>2021</td>
                   </tr>
                   <tr>
-                    <th style={{ width: "30%" }}>Giới tính</th>
+                    <th style={{ width: "30%" }}>chức vụ</th>
 
-                    <td>nam</td>
+                    <td>{data&& data.role}</td>
                   </tr>
                   <tr>
                     <th style={{ width: "30%" }}>Email</th>
 
-                    <td>tanvuu998@gmail.com</td>
+                    <td>{data && data.email}</td>
                   </tr>
                   <tr>
                     <th style={{ width: "30%" }}>Ngày sinh</th>
@@ -109,12 +129,12 @@ export default function UserPageRemake(props) {
                   <tr>
                     <th style={{ width: "30%" }}>SĐt </th>
 
-                    <td>0366610465</td>
+                    <td>{data && data.soDt}</td>
                   </tr>
                   <tr>
                     <th style={{ width: "30%" }}>Địa chỉ </th>
 
-                    <td>Tien Giang</td>
+                    <td>HCMC</td>
                   </tr>
                   <tr>
                     <th style={{ width: "30%" }}>Trường </th>
