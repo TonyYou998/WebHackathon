@@ -136,6 +136,7 @@ export default function RegisterPage() {
                 icon: "success",
                 button: "OK",
             })
+            // console.log(res.data);
             history.push("/dangnhap");
             setState({loading:0,})
         })
