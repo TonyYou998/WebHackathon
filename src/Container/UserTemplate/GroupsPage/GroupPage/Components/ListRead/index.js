@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
@@ -65,7 +65,7 @@ export default function ListRead(props) {
   }, [open]);
 
   return (
-    <div>
+    <Fragment>
       {/* <Button color="primary" className="mr-4" onClick={handleClickOpen('paper')}>Thông tin lớp học</Button> */}
       <Button className="col-4"  onClick={handleClickOpen('paper')}>
              Kiểm tra
@@ -102,6 +102,6 @@ export default function ListRead(props) {
          
         </DialogActions>
       </Dialog>
-    </div>
+    </Fragment>
   );
 }

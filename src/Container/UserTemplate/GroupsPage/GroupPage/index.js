@@ -30,7 +30,7 @@ export default function GroupPage(props) {
                 <LessonModal/>
                 
             </div>
-            <div class="pl-md-5 pt-4 all__conversation">
+            <div class="pl-md-5 pt-5 all__conversation">
                 {/* <Status/> */}
                 <Question/>
                 <Question/>
