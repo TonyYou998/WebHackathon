@@ -8,18 +8,19 @@ export default function UserPageRemake(props) {
   let dispatch=useDispatch();
 
 
-    let token=localStorage.getItem("public_key") ;
+   
         let data=useSelector(state=>state.userReducer.data);
-    useEffect(()=>{
+       
+    // useEffect(()=>{
       
-      if(!data){
-          dispatch(actGetUserDataApi(token));
+    //   if(!data){
+    //       dispatch(actGetUserDataApi(token));
          
-      }
+    //   }
         
 
 
-    },[]);
+    // },[]);
 
 
      

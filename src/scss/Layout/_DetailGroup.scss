@@ -12,10 +12,12 @@
 }
 .group__content{
     margin-left: 400px !important;
+    position: relative;
     .all__conversation{
         height: 700px;
         overflow-y: scroll
     }
+
     .put__question{
        
         input{

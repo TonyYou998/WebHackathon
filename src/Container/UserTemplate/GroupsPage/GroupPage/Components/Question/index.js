@@ -1,6 +1,39 @@
 import { Button } from "@material-ui/core";
-import React, { Component } from "react";
-function Question() {
+import React, { Component, Fragment } from "react";
+import { useSelector } from "react-redux";
+import ListRead from "../ListRead";
+function Question(props) {
+    const data=useSelector(state=>state.userReducer.data);
+      const handleCheck=()=>{
+          if(data && data.role==="gv"){
+            return (
+            //    <Button
+            //         className="col-4"
+            //         onClick={() => {
+            //           alert("Tính năng chưa phát triển");
+            //         }}
+            //       >
+            //         Kiểm tra
+            //       </Button>
+            // )
+            <Fragment>
+                <ListRead/>
+            </Fragment>
+          
+            )
+          }
+          else{
+            return ( <Button
+                    className="col-4"
+                    onClick={() => {
+                      alert("Tính năng chưa phát triển");
+                    }}
+                  >
+                    Chia sẻ
+                  </Button>)
+          }
+      }
+
     return (
               <>
         <div className="col-12 mt-5"></div>
@@ -76,14 +109,8 @@ function Question() {
                   >
                     Bình luận
                   </Button>
-                  <Button
-                    className="col-4"
-                    onClick={() => {
-                      alert("Tính năng chưa phát triển");
-                    }}
-                  >
-                    Chia sẻ
-                  </Button>
+                 
+                  {handleCheck()}
                 </div>
               </div>
             </div>

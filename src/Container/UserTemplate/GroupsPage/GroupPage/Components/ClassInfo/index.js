@@ -8,10 +8,11 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import Typography from '@material-ui/core/Typography';
 
 
-export default function ClassInfo() {
+export default function ClassInfo(props) {
   const [open, setOpen] = React.useState(false);
   const [scroll, setScroll] = React.useState('paper');
-
+  // const {role}=props;
+  // console.log(role);
   const handleClickOpen = (scrollType) => () => {
     setOpen(true);
     setScroll(scrollType);
@@ -20,7 +21,40 @@ export default function ClassInfo() {
   const handleClose = () => {
     setOpen(false);
   };
-
+  // const renderListRead=()=>{
+  //     if(role==="gv")
+  //     return (
+  //         <div>
+  //             <DialogTitle>Học viên đã xem hết bài giảng</DialogTitle>
+  //             <Typography>Vưu Hoàng Phạm Tấn</Typography>
+  //             <Typography>Nguyễn Phạm Lâm Duy</Typography>
+  //             <Typography>Nguyễn Khải Đăng</Typography>
+  //             <Typography>Dương Tuấn Bảo</Typography>
+  //             <Typography>Nguyễn Văn Minh Hoàng</Typography>
+  //               <Typography>Vưu Hoàng Phạm Tấn</Typography>
+  //             <Typography>Nguyễn Phạm Lâm Duy</Typography>
+  //             <Typography>Nguyễn Khải Đăng</Typography>
+  //             <Typography>Dương Tuấn Bảo</Typography>
+  //             <Typography>Nguyễn Văn Minh Hoàng</Typography>
+  //               <Typography>Vưu Hoàng Phạm Tấn</Typography>
+  //             <Typography>Nguyễn Phạm Lâm Duy</Typography>
+  //             <Typography>Nguyễn Khải Đăng</Typography>
+  //             <Typography>Dương Tuấn Bảo</Typography>
+  //             <Typography>Nguyễn Văn Minh Hoàng</Typography>
+  //               <Typography>Vưu Hoàng Phạm Tấn</Typography>
+  //             <Typography>Nguyễn Phạm Lâm Duy</Typography>
+  //             <Typography>Nguyễn Khải Đăng</Typography>
+  //             <Typography>Dương Tuấn Bảo</Typography>
+  //             <Typography>Nguyễn Văn Minh Hoàng</Typography>
+  //               <Typography>Vưu Hoàng Phạm Tấn</Typography>
+  //             <Typography>Nguyễn Phạm Lâm Duy</Typography>
+  //             <Typography>Nguyễn Khải Đăng</Typography>
+  //             <Typography>Dương Tuấn Bảo</Typography>
+  //             <Typography>Nguyễn Văn Minh Hoàng</Typography>
+               
+  //         </div>
+  //     )
+  // }
   const descriptionElementRef = React.useRef(null);
   React.useEffect(() => {
     if (open) {
@@ -54,35 +88,9 @@ export default function ClassInfo() {
             <Typography>Số lượng học viên:45</Typography>
                 <Typography>Giảng viên:Ngô Minh Hiếu</Typography>
 
+            
 
-
-             <DialogTitle>Học viên đã xem hết bài giảng</DialogTitle>
-              <Typography>Vưu Hoàng Phạm Tấn</Typography>
-              <Typography>Nguyễn Phạm Lâm Duy</Typography>
-              <Typography>Nguyễn Khải Đăng</Typography>
-              <Typography>Dương Tuấn Bảo</Typography>
-              <Typography>Nguyễn Văn Minh Hoàng</Typography>
-                <Typography>Vưu Hoàng Phạm Tấn</Typography>
-              <Typography>Nguyễn Phạm Lâm Duy</Typography>
-              <Typography>Nguyễn Khải Đăng</Typography>
-              <Typography>Dương Tuấn Bảo</Typography>
-              <Typography>Nguyễn Văn Minh Hoàng</Typography>
-                <Typography>Vưu Hoàng Phạm Tấn</Typography>
-              <Typography>Nguyễn Phạm Lâm Duy</Typography>
-              <Typography>Nguyễn Khải Đăng</Typography>
-              <Typography>Dương Tuấn Bảo</Typography>
-              <Typography>Nguyễn Văn Minh Hoàng</Typography>
-                <Typography>Vưu Hoàng Phạm Tấn</Typography>
-              <Typography>Nguyễn Phạm Lâm Duy</Typography>
-              <Typography>Nguyễn Khải Đăng</Typography>
-              <Typography>Dương Tuấn Bảo</Typography>
-              <Typography>Nguyễn Văn Minh Hoàng</Typography>
-                <Typography>Vưu Hoàng Phạm Tấn</Typography>
-              <Typography>Nguyễn Phạm Lâm Duy</Typography>
-              <Typography>Nguyễn Khải Đăng</Typography>
-              <Typography>Dương Tuấn Bảo</Typography>
-              <Typography>Nguyễn Văn Minh Hoàng</Typography>
-               
+           
                               
 
 
