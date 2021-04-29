@@ -60,7 +60,12 @@ export default function LoginPage() {
     }); 
     promise.catch((err) => {
       setState({loading:0,});
-       alert("sai mật khẩu");
+       swal({
+        title: "Đăng nhập thất bại",
+        text: "Hãy kiểm tra lại!",
+        icon: "error",
+        button: "OK",
+      });
       history.push("/dangnhap");
      
       

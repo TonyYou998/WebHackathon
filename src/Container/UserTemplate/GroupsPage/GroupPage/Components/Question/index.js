@@ -135,6 +135,8 @@ function Question(props) {
   console.log("True:", state.True);
   console.log("autoPlay:", state.autoplay);
 
+
+
   return (
     <div className='question__BD'>
       <div className="col-12 mt-5"></div>
@@ -247,6 +249,7 @@ function Question(props) {
                 </div>
 
                 <div className='button__BD'>
+                  <span>Link video bài giảng: </span>
                   <button onClick={() => {
                     setState({ autoplay: 1 });
                     setTimeout(() => {
@@ -254,6 +257,8 @@ function Question(props) {
                     }, 8000)
                   }} className='btnBD m-4' type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">XEM VIDEO</button>
                 </div>
+                <p>Link tài liệu PDF: https://courses.uit.edu.vn/pluginfile.php?file=%2F278996%2Fmod_assign%2Fintroattachment%2F0%2FAssignment-Basic2.pdf&amp;forcedownload=1</p>
+
 
                 <div closeButton show={show}
                   onHide={handleClose}

@@ -52,7 +52,7 @@ const handleCreateClass=(e)=>{
             onChange={(e)=>{
               setLopHoc({...lopHoc,ten:e.target.value});
             }}
-         />
+         /> 
         </div>
         <form className="modal-footer" onSubmit={handleCreateClass}>
           <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
