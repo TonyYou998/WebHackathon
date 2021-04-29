@@ -47,11 +47,11 @@ function TraLoiCauHoi() {
                     <div className="row">
                       <div className="col-6 col-md-3 mt-3">
                         <Radio
-                          checked={selectedValue === "a1"}
+                          checked={selectedValue === "a"}
                           onChange={handleChange}
-                          value="a1"
+                          value="a"
                           name="radio-button-demo"
-                          inputProps={{ "aria-label": "A1" }}
+                          inputProps={{ "aria-label": "A" }}
                         />
                         A. 08
                       </div>
@@ -61,11 +61,11 @@ function TraLoiCauHoi() {
                     <div className="row">
                       <div className="col-6 col-md-3 mt-3">
                         <Radio
-                          checked={selectedValue === "b1"}
+                          checked={selectedValue === "b"}
                           onChange={handleChange}
-                          value="b1"
+                          value="b"
                           name="radio-button-demo"
-                          inputProps={{ "aria-label": "B1" }}
+                          inputProps={{ "aria-label": "B" }}
                         />
                         B. 09
                       </div>
@@ -75,11 +75,11 @@ function TraLoiCauHoi() {
                     <div className="row">
                       <div className="col-6 col-md-3 mt-3">
                         <Radio
-                          checked={selectedValue === "c1"}
+                          checked={selectedValue === "c"}
                           onChange={handleChange}
-                          value="c1"
+                          value="c"
                           name="radio-button-demo"
-                          inputProps={{ "aria-label": "C1" }}
+                          inputProps={{ "aria-label": "C" }}
                         />
                         C. 10
                       </div>
@@ -89,11 +89,11 @@ function TraLoiCauHoi() {
                     <div className="row">
                       <div className="col-6 col-md-3 mt-3">
                         <Radio
-                          checked={selectedValue === "d1"}
+                          checked={selectedValue === "d"}
                           onChange={handleChange}
-                          value="d1"
+                          value="d"
                           name="radio-button-demo"
-                          inputProps={{ "aria-label": "D1" }}
+                          inputProps={{ "aria-label": "D" }}
                         />
                         D. 11
                       </div>

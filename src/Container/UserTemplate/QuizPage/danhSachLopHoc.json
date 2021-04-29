@@ -1,0 +1,22 @@
+{
+    "danhSachBoDe": [
+        {
+            "ten": "Đề 1",
+            "id": 1,
+            "danhSachCauHoi": [
+                {
+                    "cau1": "ABCD"
+                }
+            ]
+        },
+        {
+            "ten": "Đề 2",
+            "id": 2,
+            "danhSachCauHoi": [
+                {
+                    "cau1": "ABCD"
+                }
+            ]
+        }
+    ]
+}

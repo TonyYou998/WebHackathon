@@ -42,7 +42,7 @@ const routesUser = [
     path: "/user/profile",
     Component: UserPageRemake,
   },
-  
+
   {
     exact: false,
     path: "/user/homepage",
@@ -70,12 +70,12 @@ const routesUser = [
   },
   {
     exact: false,
-    path: "/user/bode1",
+    path: "/user/bode/:id",
     Component: taoKenh,
   },
   {
     exact: false,
-    path: "/user/thamgia",
+    path: "/user/thamgia/:id",
     Component: thamGia,
   },
   {

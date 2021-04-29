@@ -51,6 +51,16 @@ function taoKenh() {
             >
               Bắt đầu
             </Button>
+            <Button
+              className="ml-3"
+              variant="contained"
+              color="secondary"
+              onClick={() => {
+                alert("Đã lưu");
+              }}
+            >
+              Lưu
+            </Button>
           </div>
           {/* <CauHoi /> */}
           <NewCauHoi />
