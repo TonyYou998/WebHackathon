@@ -2,7 +2,7 @@ import { SettingsInputAntennaTwoTone } from '@material-ui/icons'
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { actAddClassApi } from '../../Modules/action'
-import swal from 'sweetalert';
+
 // import state from 'sweetalert/typings/modules/state'
 import $ from "jquery";
 function CreateClassButton() {

@@ -48,7 +48,7 @@ export const actAddClassApi=(data,token)=>{
             .then((result)=>{
                     // dispatch(actGetListGroupsSuccess(result.data));
                             swal({
-                    title: "Thêm lớp thành công",
+                    title: "Tham gia lớp thành công",
                     text: "hãy refresh lại",
                     icon: "success",
                     button: "OK",
@@ -76,7 +76,12 @@ export  const actJoinClass=(data,token)=>{
             )
             .then((result)=>{
                   
-                
+                   swal({
+                    title: "Thêm lớp thành công",
+                    text: "hãy refresh lại",
+                    icon: "success",
+                    button: "OK",
+                });
                    
                 
 
