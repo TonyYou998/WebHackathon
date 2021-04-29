@@ -113,7 +113,7 @@ function CauHoi() {
                     <div className="row">
                       <div className="col-4 col-md-3 mt-3">
                         <Radio
-                          checked={selectedValue === "D"}
+                          checked={selectedValue === "d"}
                           onChange={handleChange}
                           value="d"
                           name="radio-button-demo"

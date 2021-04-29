@@ -110,12 +110,7 @@ export default function LoginPage() {
         data-wow-duration="1s"
         data-wow-delay="0s"
       >
-        {/* <div className='color'></div>
-               <div className='color'></div>
-               <div className='color'></div>
-               <div className='color'></div>
-               <div className='color'></div>
-               <div className='color'></div> */}
+       
         <div className="box">
           <div className="containerr">
             <div className="form">

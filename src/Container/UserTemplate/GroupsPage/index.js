@@ -3,14 +3,14 @@ import { useDispatch, useSelector } from 'react-redux'
 import CreateClassButton from './Components/CreateClassButton'
 import GroupItem from './Components/GroupItem'
 import JoinClassButton from './Components/JoinClassButton'
-import { actGetListGroupsApi } from './Modules/action'
+import { actAddClassApi, actGetListGroupsApi } from './Modules/action'
 
 function GroupsPage() {
     let dispatch=useDispatch();
     useEffect(() => {
         dispatch(actGetListGroupsApi());
     }, [])
-    const data=useSelector(state=>state.groupsReducer.data);
+    const data=useSelector(state=>state.groupsReducer.data);    
     const renderListGroup=()=>{
         if(data && data.length>0){
             return data.map((item,index)=>{
@@ -20,6 +20,7 @@ function GroupsPage() {
             })
         }
     }
+    
     return (
        
            <div className="group-container ">

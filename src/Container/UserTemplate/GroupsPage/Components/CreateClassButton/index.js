@@ -1,16 +1,24 @@
 import { SettingsInputAntennaTwoTone } from '@material-ui/icons'
 import React, { useState } from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { actAddClassApi } from '../../Modules/action'
+import swal from 'sweetalert';
 // import state from 'sweetalert/typings/modules/state'
-
+import $ from "jquery";
 function CreateClassButton() {
+
+  
+
+
 let [lopHoc,setLopHoc]=useState({
   ten:"",
   // lopId:"111",
   // siSo:0,
 })
 let dispatch=useDispatch();
+let data=useSelector(state=>state.userReducer.data);
+
+
 
 let token=localStorage.getItem("public_key");
 
@@ -21,11 +29,12 @@ const handleCreateClass=(e)=>{
         
     }
   
- 
+ if(data && data.role==="hs")
+      $(".btn-create").addClass("ActiveCreate")
     return (
    <div>
   
-  <button type="button" className="btn btn-success mr-2" data-toggle="modal" data-target="#exampleModalCenter">
+  <button type="button" className="btn btn-success mr-2 btn-create " data-toggle="modal" data-target="#exampleModalCenter">
     Tạo Lớp Học Mới
   </button>
   

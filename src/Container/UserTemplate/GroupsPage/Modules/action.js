@@ -1,6 +1,7 @@
 import { data } from "jquery";
 import { mainApi, mockApi } from "../../../../Api";
 import * as ActionType from "./constants";
+import swal from 'sweetalert';
 export const actGetListGroupsApi=()=>{
         return(dispatch)=>{
            
@@ -46,7 +47,12 @@ export const actAddClassApi=(data,token)=>{
             )
             .then((result)=>{
                     // dispatch(actGetListGroupsSuccess(result.data));
-                
+                            swal({
+                    title: "Thêm lớp thành công",
+                    text: "hãy refresh lại",
+                    icon: "success",
+                    button: "OK",
+                });
 
                 
 

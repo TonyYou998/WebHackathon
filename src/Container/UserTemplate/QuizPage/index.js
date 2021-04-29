@@ -1,8 +1,8 @@
 import { Button, TextField } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import React from "react";
+import { React, useState } from "react";
 import { Link } from "react-router-dom";
-// import { MDCTextField } from "@material/textfield";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     "& > *": {
@@ -11,9 +11,11 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 }));
+let temp = "";
 
 function QuizPage() {
   const classes = useStyles();
+  const [count, setCount] = useState(0);
   return (
     <>
       <div className=" container">
@@ -58,13 +60,16 @@ function QuizPage() {
                       variant="outlined"
                       defaultValue="123"
                       label="Mã code"
+                      onChange={(e) => {
+                        temp = e.target.value;
+                      }}
                     />
                   </form>
                   <Link
                     className="my-3 btn btn-warning text-light"
                     variant="contained"
                     color="primary"
-                    to="/user/thamgia"
+                    to={"/user/thamgia/" + "123"}
                   >
                     Bắt đầu
                   </Link>
