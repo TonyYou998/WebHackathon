@@ -1,6 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useDispatch } from 'react-redux';
+import { actJoinClass } from '../../Modules/action';
 
 function JoinClassButton() {
+let dispatch=useDispatch();
+  const [state,setState]=useState({
+      ten:"",
+
+
+  });
+  const token=localStorage.getItem("public_key");
+  const handleJoinClass=(e)=>{
+    e.preventDefault();
+      dispatch(actJoinClass(state,token));
+
+  }
+
+
     return (
         <div>
   
@@ -18,12 +34,15 @@ function JoinClassButton() {
           </button>
         </div>
         <div className="modal-body">
-           <input placeholder="Nhập mã lớp" className="w-100 join__input"/>
+           <input placeholder="Nhập tên lớp" className="w-100 join__input" onChange={(e)=>{
+              setState({...state,ten:e.target.value});
+
+           }}/>
         </div>
-        <div className="modal-footer">
+        <form className="modal-footer" onSubmit={handleJoinClass}>
           <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" className="btn btn-primary">Save changes</button>
-        </div>
+          <button type="submit" className="btn btn-primary">Save changes</button>
+        </form>
       </div>
     </div>
   </div>

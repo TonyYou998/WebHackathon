@@ -68,7 +68,7 @@ export default function LessonModal() {
 
   let handleSubmit = (data) => {
       let promise = Axios({
-        url:'https://hackathon-be-dev.herokuapp.com/posts',
+        url:'http://192.168.43.223:8080/posts',
         method:'POST',
         headers: {
           "Content-Type": "application/json",
@@ -85,6 +85,7 @@ export default function LessonModal() {
           icon: "success",
           button: "OK",
       })
+     
         // setState({loading:0});
         window.location.reload();
       })

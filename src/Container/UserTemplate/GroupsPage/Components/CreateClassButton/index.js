@@ -1,6 +1,27 @@
-import React from 'react'
+import { SettingsInputAntennaTwoTone } from '@material-ui/icons'
+import React, { useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { actAddClassApi } from '../../Modules/action'
+// import state from 'sweetalert/typings/modules/state'
 
 function CreateClassButton() {
+let [lopHoc,setLopHoc]=useState({
+  ten:"",
+  // lopId:"111",
+  // siSo:0,
+})
+let dispatch=useDispatch();
+
+let token=localStorage.getItem("public_key");
+
+
+const handleCreateClass=(e)=>{
+        e.preventDefault();
+        dispatch(actAddClassApi(lopHoc,token));
+        
+    }
+  
+ 
     return (
    <div>
   
@@ -18,12 +39,16 @@ function CreateClassButton() {
           </button>
         </div>
         <div className="modal-body">
-         <input placeholder="Nhập tên lớp " className="w-100 create__input"/>
+         <input name="name" placeholder="Nhập tên lớp " className="w-100 create__input"
+            onChange={(e)=>{
+              setLopHoc({...lopHoc,ten:e.target.value});
+            }}
+         />
         </div>
-        <div className="modal-footer">
+        <form className="modal-footer" onSubmit={handleCreateClass}>
           <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" className="btn btn-primary">Save changes</button>
-        </div>
+          <button type="submit" className="btn btn-primary">Save changes</button>
+        </form>
       </div>
     </div>
   </div>

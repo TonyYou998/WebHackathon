@@ -39,7 +39,7 @@ export default function LoginPage() {
       
 
     let promise = Axios({
-      url: "https://hackathon-be-dev.herokuapp.com/users/login",
+      url: "http://192.168.43.223:8080/users/login",
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -57,7 +57,7 @@ export default function LoginPage() {
        localStorage.setItem("public_key",res.data.token);
             setState({loading:0,})
             history.push("/user/homepage");
-    });
+    }); 
     promise.catch((err) => {
       setState({loading:0,});
        alert("sai mật khẩu");

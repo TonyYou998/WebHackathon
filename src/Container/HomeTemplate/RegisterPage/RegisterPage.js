@@ -121,7 +121,7 @@ export default function RegisterPage() {
 
     let onSubmit = (data) => {
         let promise = Axios({
-            url: 'https://hackathon-be-dev.herokuapp.com/users',
+            url: 'http://192.168.43.223:8080/users',
             method: 'POST',
             headers: {
                 "Content-Type": "application/json"

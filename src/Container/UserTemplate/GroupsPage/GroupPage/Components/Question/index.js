@@ -44,19 +44,20 @@ function Question(props) {
 
   let LayTaiLieuKhoaHoc = () => {
       let promise = Axios({
-          url:'https://hackathon-be-dev.herokuapp.com/get',
-          method:'GET',
-          headers: {
-            "Content-Type": "application/json",
-          },
-      })
-      promise.then(res => {
-        console.log(res.data);
-      })
+      url: 'http://192.168.43.223:8080/posts',
+      method: 'POST',
+      headers: {
+        "Content-Type": "application/json",
+        'Authorization': 'Bearer ' + localStorage.getItem('public_key')
+      },
+    })
+    promise.then(res => {
+      console.log(res.data);
+    })
 
-      promise.catch(err => {
-        console.log(err.response.data);
-      })
+    promise.catch(err => {
+      console.log(err.response.data);
+    })
   }
 
   useEffect(() => {

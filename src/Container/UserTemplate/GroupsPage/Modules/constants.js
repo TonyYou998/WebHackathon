@@ -1,0 +1,4 @@
+export const GET_LIST_GROUPS_REQUEST="groupsReducer/ GET_LIST_GROUPS_REQUEST";
+export const GET_LIST_GROUPS_SUCCESS="groupsReducer/ GET_LIST_GROUPS_SUCCESS";
+export const GET_LIST_GROUPS_FAILED="groupsReducer/ GET_LIST_GROUPS_FAILED";
+
