@@ -148,7 +148,7 @@ export default function RegisterPage() {
                 icon: "error",
                 button: "OK",
             })
-            console.log(err.response.data);
+            // console.log(err.response.data);
         })
     }
     if(state.loading)
